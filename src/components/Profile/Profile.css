@@ -1,0 +1,140 @@
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-picture-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+  
+  .profile-bio {
+    color: #666;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+  }
+  
+  .profile-edit-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .profile-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .profile-input:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  .profile-edit-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .profile-save-button,
+  .profile-cancel-button,
+  .profile-edit-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .profile-save-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+  }
+  
+  .profile-save-button:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  
+  .profile-cancel-button {
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+  }
+  
+  .profile-edit-button {
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+  }
+  
+  .profile-posts {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-posts-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+  }
+  
+  .profile-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .profile-post-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .profile-post-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
